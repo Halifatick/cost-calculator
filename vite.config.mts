@@ -8,7 +8,7 @@ import Sitemap from 'vite-plugin-sitemap'
 const additionalScssImports = `@use '@/styles/base/_variables.scss' as *;`
 
 const config: UserConfigExport = defineConfig(({ mode }: ConfigEnv) => ({
-  base: '/',
+  base: '/cost-calculator/',
   envDir: './env',
   plugins: [
     vue(),
