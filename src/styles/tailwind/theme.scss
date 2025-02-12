@@ -1,3 +1,20 @@
 @theme {
   --color-alice-blue: #eef2f4;
+  --color-custom-gray: #86969C;
+  --color-custom-red: #EB5757;
+  --color-custom-purple: #7A5CFA;
+}
+
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-custom-gray);
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }

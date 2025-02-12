@@ -54,7 +54,6 @@ const config: UserConfigExport = defineConfig(({ mode }: ConfigEnv) => ({
       output: {
         manualChunks: {
           vue: ['vue', 'vue-router', 'pinia'],
-          vendor: ['axios'],
           utilities: ['lodash.clonedeep'],
           icons: ['@heroicons/vue'],
         },
